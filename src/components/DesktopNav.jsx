@@ -2,10 +2,10 @@ import { NavLink, Link } from "react-router-dom";
 
 const navItems = [
   { path: "/", label: "Home" },
-  { path: "/projects", label: "Projects" },
   { path: "/about", label: "About" },
+  { path: "/projects", label: "Projects" },
   { path: "/experience", label: "Experience" },
-  { path: "/npmZone", label: "NpmZone" },
+  { path: "/npmZone", label: "Npm Zone" },
   { path: "/hackathons", label: "Hackathons" },
   { path: "/certificates", label: "Certificates" },
 ];
