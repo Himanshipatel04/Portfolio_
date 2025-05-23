@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+  background: black;
+  color: aliceblue;
+  background-blend-mode: overlay;
+  position: relative;
+  z-index: -1;
+  overflow-x: hidden;
+}
+
+/* Full-page persistent radial background */
+body::before {
+  content: "";
+  position: fixed; /* So it doesn't scroll away */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+      circle at 30% 85%,
+      rgba(68, 189, 34, 0.15) 10%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 40%,
+      rgba(203, 131, 224, 0.14) 0%,
+      transparent 40%
+    );
+  z-index: -1;
+  pointer-events: none;
+}
+
+.custom-shadow {
+  box-shadow: 0 0 8px 1px pink;
+}
+
+
+.zeyada-regular {
+  font-family: "Zeyada", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.dancing-script-unique {
+  font-family: "Dancing Script", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.teko-regular {
+  font-family: "Teko", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff7eb3, #7a71fa, #69f37d);
+  animation: loadingAnimation 0.7s ease-in-out forwards;
+  z-index: 9999;
+}
+
+/* Keyframes for animation */
+@keyframes loadingAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
