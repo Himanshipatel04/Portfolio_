@@ -1,14 +1,6 @@
 import { NavLink, Link } from "react-router-dom";
+import {navItems} from '../constants/navItems'
 
-const navItems = [
-  { path: "/", label: "Home" },
-  { path: "/about", label: "About" },
-  { path: "/projects", label: "Projects" },
-  { path: "/experience", label: "Experience" },
-  { path: "/npmZone", label: "Npm Zone" },
-  { path: "/hackathons", label: "Hackathons" },
-  { path: "/certificates", label: "Certificates" },
-];
 
 const DesktopNav = () => {
   return (
