@@ -71,7 +71,7 @@ const Hero = () => {
       </div>
 
       <main className="h-[80vh] md:h-[70vh] flex items-center justify-center flex-col gap-7 md:gap-5 text-center">
-        <div className="relative flex flex-col items-center cursor-default">
+        <div className="relative flex flex-col items-center pointer-events-none">
           <img
             src={react}
             alt="React"
