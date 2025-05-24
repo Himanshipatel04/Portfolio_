@@ -1,44 +1,49 @@
+import sih1 from "../assets/sih1.jpg"
+import sih2 from "../assets/sih2.jpg";
+import sih3 from "../assets/sih3.jpg";
+import citronics1 from "../assets/citronics1.jpg";
+import savishkar1 from "../assets/savishkar1.jpg";
+import savishkar2 from "../assets/savishkar2.jpg";
+
+
 export const hackathonData = [
     {
-        role: "Winner",
-        title: "National Innovation Challenge",
-        location: "Delhi",
-        date: "March 2025",
+        role: "Grand Finalist",
+        title: "Smart India Hackathon 2023",
+        location: "Jaipur, Rajasthan",
+        date: "December 2023",
         description:
-            "Developed an AI-powered waste management system+Implemented real-time object detection for waste segregation+Achieved 95% accuracy in test environments+Led a team of 4 in prototype development and pitch presentation.",
+            "Built a cross-functional research collaboration platform for universities across India. Selected among the top 7 teams from over 500 national entries. Appreciated for platform UI, and vision by the Ministry of Education",
         images: [
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr5OzNJPX4D-IiN_2SVkoN2JDyxnTEv22tVw&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg-_K_C0mLby1pKBahybguddZ5QcsYPZ7pQA&s"
+            sih1, sih2, sih3
         ],
-        projectLink: "dfd",
-        certificateLink: "fadfa"
-    },
-    {
-        role: "Finalist",
-        title: "Smart India Hackathon",
-        location: "Pune",
-        date: "August 2024",
-        description:
-            "Created a multilingual cultural heritage portal+Integrated Google Translate API for live language switching+Highlighted India’s soft power through user-friendly modules+UI/UX received special appreciation by judges.",
-        images: [
-            "https://source.unsplash.com/random/800x600?culture",
-            "https://source.unsplash.com/random/800x600?ui"
-        ],
-        projectLink: "dfd",
-        certificateLink: "fadfa"
+        projectLink: "https://github.com/yourname/sih2023",
+        certificateLink: "https://drive.google.com/yourcertificate1"
     },
     {
         role: "Runner-up",
-        title: "Hack4Good",
-        location: "Bangalore",
-        date: "January 2025",
+        title: "Citronics 2K24",
+        location: "Indore, Madhya Pradesh",
+        date: "February 2024",
         description:
-            "Built a mobile app to connect volunteers with NGOs+Used Firebase for real-time updates and location tracking+Secured 2nd place among 150+ teams+Featured in Hack4Good newsletter.",
+            "Developed a customized articles application tailored as per users requirements. Secured Runner-up position among top teams from across India. The solution was praised for its user-centric design and deployable tech stack",
         images: [
-            "https://source.unsplash.com/random/800x600?volunteer",
-            "https://source.unsplash.com/random/800x600?mobileapp"
+            citronics1,citronics1, citronics1   
         ],
-        projectLink: "dfd",
-        certificateLink: "fadfa"
+        projectLink: "https://github.com/yourname/citronics2k24",
+        certificateLink: "https://drive.google.com/yourcertificate2"
     },
+    {
+        role: "3rd Place Winner",
+        title: "Savishkar 2025",
+        location: "Bhopal, Madhya Pradesh",
+        date: "May 2025",
+        description:
+            "Proposed an AI-based solution for advancing agriculture through predictive analysis and smart recommendations. Secured 3rd place among 340+ participants and 65+ shortlisted teams. The project was well-received for its relevance to regional agricultural challenges",
+        images: [
+            savishkar1, savishkar2
+        ],
+        projectLink: "https://github.com/yourname/savishkar2025",
+        certificateLink: "https://drive.google.com/yourcertificate3"
+    }
 ];

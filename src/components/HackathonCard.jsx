@@ -36,7 +36,7 @@ const HackathonCard = ({
         <div className="w-full md:w-1/2">
           <Slider {...sliderSettings}>
             {images.map((image, index) => (
-              <div key={index} className="w-full h-56 md:h-full">
+              <div key={index} className="w-full h-56 md:h-96">
                 <img
                   src={image}
                   alt={`Hackathon Image ${index + 1}`}
@@ -48,20 +48,23 @@ const HackathonCard = ({
         </div>
 
         {/* Content */}
-        <div className="w-full md:w-1/2 text-left flex flex-col justify-center space-y-4">
+        <div className="w-full md:w-1/2 text-left flex flex-col justify-center space-y-3">
           <h2 className="text-3xl font-extrabold text-pink-400">{role}</h2>
           <div className="text-purple-200 text-lg font-medium">
-            {title}, {location}
+            {title} 
+          </div>
+          <div className="text-purple-200 text-lg font-medium">
+            {location}
           </div>
           <p className="text-sm text-purple-300 italic">{date}</p>
           <div>
-            {description.split("+").map((line, index) => (
+            {description.split(".").map((line, index) => (
               <p
                 key={index}
                 className="text-sm md:text-lg text-purple-300 flex items-start gap-2"
               >
                 <span className="h-2 w-2 mt-1.5 md:mt-3 rounded-full bg-green-200 flex-shrink-0"></span>
-                {line.trim()}
+                {line.trim() + (index < description.split(".").length - 1 ? "." : "")}
               </p>
             ))}
           </div>

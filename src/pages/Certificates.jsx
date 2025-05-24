@@ -15,7 +15,7 @@ const CertificateCard = ({ title, issuer, date, image, link }) => {
       <img
         src={image}
         alt={title}
-        className="w-full h-48 object-cover rounded-xl mb-4 border border-white/20"
+        className="w-full min-h-96 object-cover rounded-xl mb-4 border border-white/20"
       />
       <h3 className="text-lg font-semibold text-white">{title}</h3>
       <p className="text-sm text-gray-300">{issuer}</p>
