@@ -17,8 +17,6 @@ export const hackathonData = [
         images: [
             sih1, sih2, sih3
         ],
-        projectLink: "https://github.com/yourname/sih2023",
-        certificateLink: "https://drive.google.com/yourcertificate1"
     },
     {
         role: "Runner-up",
@@ -28,10 +26,8 @@ export const hackathonData = [
         description:
             "Developed a customized articles application tailored as per users requirements. Secured Runner-up position among top teams from across India. The solution was praised for its user-centric design and deployable tech stack",
         images: [
-            citronics1,citronics1, citronics1   
+            citronics1, citronics1, citronics1
         ],
-        projectLink: "https://github.com/yourname/citronics2k24",
-        certificateLink: "https://drive.google.com/yourcertificate2"
     },
     {
         role: "3rd Place Winner",
@@ -43,7 +39,5 @@ export const hackathonData = [
         images: [
             savishkar1, savishkar2
         ],
-        projectLink: "https://github.com/yourname/savishkar2025",
-        certificateLink: "https://drive.google.com/yourcertificate3"
     }
 ];

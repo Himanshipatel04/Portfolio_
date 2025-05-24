@@ -2,7 +2,7 @@ import { ExternalLink, Github } from "lucide-react";
 
 const ProjectCard = ({ title, description, image, tech, github, demo }) => {
   return (
-    <div className="bg-white/10 p-4 h-96 md:h-[450px] rounded-2xl backdrop-blur-lg shadow-md text-left">
+    <div className="bg-white/10 p-4 h-fit rounded-2xl backdrop-blur-lg shadow-md text-left">
       <img
         src={image}
         alt={title}
