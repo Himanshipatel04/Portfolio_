@@ -1,7 +1,10 @@
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import PhotoModal from "./PhotoModal";
+
 
 const HackathonCard = ({
   title,
@@ -12,6 +15,9 @@ const HackathonCard = ({
   images,
   certificateLink,
 }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalPhoto, setModalPhoto] = useState(null);
+
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -23,67 +29,84 @@ const HackathonCard = ({
     arrows: false,
   };
 
+  const descriptionLines = description.split(".");
+
+  const openModal = (img) => {
+    setModalPhoto(img);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalPhoto(null);
+  };
+
   return (
-    <motion.div
-      className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-[0_10px_35px_rgba(0,0,0,0.2)] text-white w-full overflow-hidden"
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
-    >
-      <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-6 md:p-8">
-        {/* Carousel */}
-        <div className="w-full md:w-1/2">
-          <Slider {...sliderSettings}>
-            {images.map((image, index) => (
-              <div key={index} className="w-full h-56 md:h-96">
-                <img
-                  src={image}
-                  alt={`Hackathon Image ${index + 1}`}
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </div>
-            ))}
-          </Slider>
-        </div>
-
-        {/* Content */}
-        <div className="w-full md:w-1/2 text-left flex flex-col justify-center space-y-3">
-          <h2 className="text-3xl font-extrabold text-pink-400">{role}</h2>
-          <div className="text-purple-200 text-lg font-medium">
-            {title} 
-          </div>
-          <div className="text-purple-200 text-lg font-medium">
-            {location}
-          </div>
-          <p className="text-sm text-purple-300 italic">{date}</p>
-          <div>
-            {description.split(".").map((line, index) => (
-              <p
-                key={index}
-                className="text-sm md:text-lg text-purple-300 flex items-start gap-2"
-              >
-                <span className="h-2 w-2 mt-1.5 md:mt-3 rounded-full bg-green-200 flex-shrink-0"></span>
-                {line.trim() + (index < description.split(".").length - 1 ? "." : "")}
-              </p>
-            ))}
+    <>
+      <motion.div
+        className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-[0_10px_35px_rgba(0,0,0,0.2)] text-white w-full overflow-hidden"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-6 md:p-8">
+          {/* Carousel */}
+          <div className="w-full md:w-1/2">
+            <Slider {...sliderSettings}>
+              {images.map((image, index) => (
+                <div key={index} className="w-full h-56 md:h-96 cursor-pointer">
+                  <img
+                    src={image}
+                    alt={`Hackathon Image ${index + 1}`}
+                    className="w-full h-full object-cover rounded-lg"
+                    onClick={() => openModal(image)}
+                  />
+                </div>
+              ))}
+            </Slider>
           </div>
 
-          {certificateLink && (
-            <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-2">
-              <a
-                href={certificateLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 bg-gray-700/50 text-white rounded-full shadow hover:bg-gray-700/70 transition duration-200"
-              >
-                View Certificate
-              </a>
+          {/* Content */}
+          <div className="w-full md:w-1/2 text-left flex flex-col justify-center space-y-3">
+            <h2 className="text-3xl font-extrabold text-pink-400">{role}</h2>
+            <div className="text-purple-200 text-lg font-medium">{title}</div>
+            <div className="text-purple-200 text-lg font-medium">{location}</div>
+            <p className="text-sm text-purple-300 italic">{date}</p>
+            <div>
+              {descriptionLines.map((line, index) =>
+                line.trim() ? (
+                  <p
+                    key={index}
+                    className="text-sm md:text-lg text-purple-300 flex items-start gap-2"
+                  >
+                    <span className="h-2 w-2 mt-1.5 md:mt-3 rounded-full bg-green-200 flex-shrink-0"></span>
+                    {line.trim() + (index < descriptionLines.length - 1 ? "." : "")}
+                  </p>
+                ) : null
+              )}
             </div>
-          )}
+
+            {certificateLink && (
+              <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-2">
+                <a
+                  href={certificateLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-gray-700/50 text-white rounded-full shadow hover:bg-gray-700/70 transition duration-200"
+                  aria-label="View Certificate"
+                >
+                  View Certificate
+                </a>
+              </div>
+            )}
+          </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+
+      {/* Modal */}
+      <PhotoModal isOpen={isModalOpen} onClose={closeModal} photoSrc={modalPhoto} />
+    </>
   );
 };
 

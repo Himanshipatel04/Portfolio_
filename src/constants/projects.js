@@ -4,16 +4,24 @@ export const projectList = [
         description:
             "A collaborative student project sharing platform to upload, explore, and collaborate on academic projects across universities.",
         image: "/projects/learnify.png",
-        tech: ["React", "Node.js", "Express", "MongoDB", "Firebase", "Cloudinary", "Tailwind"],
+        tech: ["React", "Node.js", "Express", "MongoDB", "Cloudinary", "JWT", "Tailwind", "Zustand"],
         github: "https://github.com/your-repo/learnify",
-        demo: "https://learnify.com",
+        demo: "https://learnifyprojectapp.netlify.app", 
+    },
+    {
+        title: "Kisaan AI",
+        description: "AI-powered agricultural assistant providing real-time weather updates, crop management tips, and market prices for farmers.",
+        image: "/projects/kisaanai.png",
+        tech: ["React", "Node.js", "Express", "MongoDB", "Gemini", "Tailwind CSS", "Zustand"],
+        github: "https://github.com/your-repo/kisaanai",
+        demo: "https://kai-dun.vercel.app",
     },
     {
         title: "EventPulse",
         description:
             "Event management system for creating, managing, and promoting events with a user-friendly interface and ticketing system.",
         image: "/projects/eventpulse.png",
-        tech: ["React", "Node.js", "Express", "MongoDB", "Firebase", "Cloudinary", "Tailwind"],
+        tech: ["React", "Node.js", "Express", "MongoDB", "JWT", "Tailwind CSS", "Context Api"],
         github: "https://github.com/your-repo/eventpulse",
         demo: "https://eventpulse.com",
     },
@@ -40,7 +48,7 @@ export const projectList = [
         description:
             "Smart to-do and notes app with reminders, task prioritization, collaborative notes, and cross-device synchronization.",
         image: "/projects/taskmate.png",
-        tech: ["React", "Node.js", "Express", "MongoDB", "Firebase", "Redux", "Tailwind"],
+        tech: ["React", "MongoDB", "Django", "Tailwind", "Context Api"],
         github: "https://github.com/taskmate",
         demo: "https://taskmate.com",
     },
@@ -49,7 +57,7 @@ export const projectList = [
         description:
             "Next-gen blogging platform with Markdown support, category customization, and AI-powered blog recommendations.",
         image: "/projects/bloghive.png",
-        tech: ["React", "Node.js", "Express", "MongoDB", "Firebase", "Tailwind"],
+        tech: ["React", "Node.js", "Express", "MongoDB", "Context Api", "Tailwind"],
         github: "https://github.com/bloghive",
         demo: "https://bloghive.com",
     },

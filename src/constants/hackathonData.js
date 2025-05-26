@@ -8,14 +8,14 @@ import savishkar2 from "../assets/savishkar2.jpg";
 
 export const hackathonData = [
     {
-        role: "Grand Finalist",
-        title: "Smart India Hackathon 2023",
-        location: "Jaipur, Rajasthan",
-        date: "December 2023",
+        role: "3rd Winner",
+        title: "Savishkar 2025",
+        location: "Bhopal, Madhya Pradesh",
+        date: "May 2025",
         description:
-            "Built a cross-functional research collaboration platform for universities across India. Selected among the top 7 teams from over 500 national entries. Appreciated for platform UI, and vision by the Ministry of Education",
+            "Proposed an AI-based solution for advancing agriculture through predictive analysis and smart recommendations. Secured 3rd place among 340+ participants and 65+ shortlisted teams. The project was well-received for its relevance to regional agricultural challenges",
         images: [
-            sih1, sih2, sih3
+            savishkar1, savishkar2
         ],
     },
     {
@@ -30,14 +30,16 @@ export const hackathonData = [
         ],
     },
     {
-        role: "3rd Place Winner",
-        title: "Savishkar 2025",
-        location: "Bhopal, Madhya Pradesh",
-        date: "May 2025",
+        role: "Grand Finalist",
+        title: "Smart India Hackathon 2023",
+        location: "Jaipur, Rajasthan",
+        date: "December 2023",
         description:
-            "Proposed an AI-based solution for advancing agriculture through predictive analysis and smart recommendations. Secured 3rd place among 340+ participants and 65+ shortlisted teams. The project was well-received for its relevance to regional agricultural challenges",
+            "Built a cross-functional research collaboration platform for universities across India. Selected among the top 7 teams from over 500 national entries. Appreciated for platform UI, and vision by the Ministry of Education",
         images: [
-            savishkar1, savishkar2
+            sih1, sih2, sih3
         ],
-    }
+    },
+
+
 ];
