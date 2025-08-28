@@ -86,7 +86,7 @@ const ExperienceItem = ({
         </p>
 
         {/* Description */}
-        <ul className="text-gray-300 leading-relaxed mb-5">
+        <ul className="text-gray-300 text-sm leading-relaxed mb-5">
           {description.split("+").map((val, index) => (
             <li
               key={index}

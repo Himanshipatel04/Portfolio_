@@ -24,20 +24,20 @@ const MobileDrawer = ({ isOpen, toggle }) => {
           className="fixed top-0 right-0 h-screen w-3/4 bg-gray-900 z-40 p-6 text-white shadow-lg md:hidden"
         >
          
-          <ul className="space-y-5 text-lg pt-20">
+          <ul className="space-y-5 text-sm pt-20">
             {navItems.map(({ path, label }) => (
               <li key={path}>
-                <NavLink
+                <Link
                   to={path}
                   onClick={toggle}
                   className={({ isActive }) =>
-                    `block transition-colors duration-300 hover:text-pink-400 ${
+                    `block transition-colors text-sm duration-300 hover:text-pink-400 ${
                       isActive ? "text-pink-400" : "text-white"
                     }`
                   }
                 >
                   {label}
-                </NavLink>
+                </Link>
               </li>
             ))}
            

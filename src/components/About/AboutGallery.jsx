@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import about1 from "../../assets/Himi.jpg";
-import about2 from "../../assets/Himi2.jpg";
+import about2 from "../../assets/bhimbetka.png";
 import PhotoModal from "../../components/PhotoModal";
 
 const imageVariants = {
@@ -17,9 +17,10 @@ const imageData = [
     description: "Capturing a moment from my journey of internship in Pune",
   },
   {
-    src: about1,
-    location: "Pune, Maharashtra",
-    description: "Another beautiful capture from the same journey",
+    src: about2,
+    location: "Bhopal, Madhya Pradesh",
+    description:
+      "Exploring the ancient rock shelters of Bhimbetka[ I love travelling :) ] ",
   },
 ];
 

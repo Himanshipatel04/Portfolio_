@@ -4,14 +4,14 @@ import Logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-700/50 backdrop-blur-md text-white py-1">
+    <footer className="bg-gray-700/50 backdrop-blur-md text-white">
       <div className="max-w-6xl mx-auto flex px-3 md:flex-row justify-between items-center gap-3">
         {/* Logo and Brand */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center py-1 gap-3">
           <img
             src={Logo}
             alt="Himanshi Logo"
-            className="w-16 h-16 object-contain"
+            className="h-6 object-contain"
           />
         </div>
 

@@ -75,15 +75,15 @@ const Hero = () => {
           <img
             src={react}
             alt="React"
-            className="w-6 md:w-12 absolute top-8 right-12 md:-top-12 md:-right-0.5 animate-spin"
+            className="w-6 md:w-12 absolute top-14 right-12 md:-top-12 md:-right-0.5 animate-spin"
           />
-          <p className="text-5xl md:text-7xl font-bold leading-tight bg-gradient-to-r from-pink-500 via-blue-500 to-emerald-500 bg-clip-text text-transparent zeyada-regular">
+          <p className="text-5xl md:text-7xl font-bold leading-relaxed bg-gradient-to-r from-pink-500 via-blue-500 to-emerald-500 bg-clip-text text-transparent zeyada-regular">
             HEY , I am{" "}
             <span className="tracking-widest text-6xl md:text-8xl hover:tracking-normal duration-500">
               HIMANSHI
             </span>
           </p>
-          <p className="text-lg md:text-2xl tracking-wide teko-regular mt-6">
+          <p className="text-lg md:text-2xl tracking-wide teko-regular ">
             I am a Software Developer specializing in full stack development.
           </p>
         </div>
@@ -139,7 +139,6 @@ const Hero = () => {
         </div>
       </main>
 
-      <Footer />
     </div>
   );
 };
@@ -149,7 +148,7 @@ export default Hero;
 export const Drawer = ({ active, toggleMenu }) => {
   return (
     <div
-      className={`fixed top-0 right-0 h-full w-[50%] md:w-[20%] bg-gray-900 text-white shadow-xl z-50 transition-transform duration-300 ${
+      className={`fixed top-0 right-0 h-full w-[50%] md:w-[20%]  backdrop-blur-xl text-white shadow-xl z-50 transition-transform duration-300 ${
         active ? "translate-x-0" : "translate-x-full"
       }`}
     >
@@ -163,7 +162,7 @@ export const Drawer = ({ active, toggleMenu }) => {
         </button>
       </div>
 
-      <div className="flex flex-col gap-6 p-6 text-lg">
+      <div className="flex flex-col gap-6 p-6 text-md">
         {navItems.map(({ path, label, icon: Icon }) => (
           <Link
             key={path}

@@ -30,7 +30,7 @@ const items = [
   {
     icon: <TrendingUp className="w-6 h-6 text-pink-400" />,
     title: "Interests",
-    description: "Finance insights & staying ahead in tech innovations.",
+    description: "In my free time, you'll find me diving into system design, exploring how apps scale, or getting lost in the wonders of space and quantum physics.",
   },
   {
     icon: <Heart className="w-6 h-6 text-pink-400" />,
@@ -60,7 +60,7 @@ const AboutContent = () => {
               <h3 className="text-lg font-semibold text-white mb-1">
                 {item.title}
               </h3>
-              <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+              <p className="text-gray-300 text-sm leading-relaxed">
                 {item.description}
               </p>
             </div>

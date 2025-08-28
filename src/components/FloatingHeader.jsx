@@ -17,7 +17,6 @@ const FloatingHeader = ({ isOpen, setIsOpen }) => {
       >
         <nav className="flex justify-between items-center px-6 py-1 md:py-3 text-white">
           <Link to={"/"}>
-            
             <img src={logo} alt="" className="h-12 cursor-pointer" />
           </Link>
           <DesktopNav />
