@@ -12,7 +12,7 @@ const AboutHero = () => {
         About Me
       </h1>
       <p className="text-gray-300 max-w-2xl mx-auto text-sm md:text-base">
-        I’m Himanshi — passionate about turning ideas into beautiful, useful software. Here's a glimpse of who I am, what I love, and where I’m headed.
+        I’m Himanshi, passionate about turning ideas into applications. Here's a glimpse of who I am, what I love, and where I’m headed.
       </p>
     </motion.div>
   );

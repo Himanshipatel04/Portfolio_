@@ -1,8 +1,6 @@
 // AboutGallery.jsx
 import { useState } from "react";
 import { motion } from "framer-motion";
-import about1 from "../../assets/Himi.jpg";
-import about2 from "../../assets/bhimbetka.png";
 import PhotoModal from "../../components/PhotoModal";
 
 const imageVariants = {
@@ -12,12 +10,12 @@ const imageVariants = {
 
 const imageData = [
   {
-    src: about1,
+    src: "https://ik.imagekit.io/7ou6v9w7m/assets/Himi.jpg?updatedAt=1768631352077",
     location: "Pune, Maharashtra",
     description: "Capturing a moment from my journey of internship in Pune",
   },
   {
-    src: about2,
+    src: "https://ik.imagekit.io/7ou6v9w7m/assets/bhimbetka.png?updatedAt=1768631354639",
     location: "Bhopal, Madhya Pradesh",
     description:
       "Exploring the ancient rock shelters of Bhimbetka[ I love travelling :) ] ",

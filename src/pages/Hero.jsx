@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Footer from "../common/Footer";
 import react from "../assets/React.a7bac6fd.png";
 import logo from "../assets/logo.png";
 import {
@@ -70,20 +69,20 @@ const Hero = () => {
         ))}
       </div>
 
-      <main className="h-[80vh] md:h-[70vh] flex items-center justify-center flex-col gap-7 md:gap-5 text-center">
+      <main className="h-[80vh] md:h-[60vh] flex items-center justify-center flex-col gap-7 md:gap-5 text-center macondo-regular">
         <div className="relative flex flex-col items-center pointer-events-none">
           <img
             src={react}
             alt="React"
-            className="w-6 md:w-12 absolute top-14 right-12 md:-top-12 md:-right-0.5 animate-spin"
+            className="w-6 md:w-12 absolute top-14 right-9 md:-top-12 md:-right-2 animate-spin"
           />
-          <p className="text-5xl md:text-7xl font-bold leading-relaxed bg-gradient-to-r from-pink-500 via-blue-500 to-emerald-500 bg-clip-text text-transparent zeyada-regular">
+          <p className="text-5xl md:text-7xl font-bold leading-relaxed bg-gradient-to-r from-pink-500 via-blue-500 to-emerald-500 bg-clip-text text-transparent ">
             HEY , I am{" "}
-            <span className="tracking-widest text-6xl md:text-8xl hover:tracking-normal duration-500">
+            <span className="text-6xl md:text-8xl hover:tracking-normal duration-500">
               HIMANSHI
             </span>
           </p>
-          <p className="text-lg md:text-2xl tracking-wide teko-regular ">
+          <p className="text-lg md:text-2xl  ">
             I am a Software Developer specializing in full stack development.
           </p>
         </div>
@@ -170,7 +169,7 @@ export const Drawer = ({ active, toggleMenu }) => {
             onClick={toggleMenu}
             className="hover:text-pink-400"
           >
-            <p className="flex items-center gap-2">
+            <p className="flex items-center gap-2 macondo-regular">
               {" "}
               <Icon size={20} />
               {label}

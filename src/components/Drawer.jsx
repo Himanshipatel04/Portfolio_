@@ -9,7 +9,6 @@ const navItems = [
   { path: "/npmZone", label: "NpmZone" },
   { path: "/hackathons", label: "Hackathon" },
   { path: "/certificates", label: "Certificates" },
-
 ];
 
 const MobileDrawer = ({ isOpen, toggle }) => {
@@ -21,10 +20,9 @@ const MobileDrawer = ({ isOpen, toggle }) => {
           animate={{ x: 0 }}
           exit={{ x: "100%" }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
-          className="fixed top-0 right-0 h-screen w-3/4 bg-gray-900 z-40 p-6 text-white shadow-lg md:hidden"
+          className="fixed top-0 right-0 h-screen w-3/4 bg-gray-900/50 backdrop-blur-md z-40 p-6 text-white shadow-lg md:hidden"
         >
-         
-          <ul className="space-y-5 text-sm pt-20">
+          <ul className="space-y-5 text-md pt-20 macondo-regular">
             {navItems.map(({ path, label }) => (
               <li key={path}>
                 <Link
@@ -40,7 +38,6 @@ const MobileDrawer = ({ isOpen, toggle }) => {
                 </Link>
               </li>
             ))}
-           
           </ul>
         </motion.div>
       )}

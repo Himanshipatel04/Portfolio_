@@ -7,13 +7,19 @@ const items = [
     title: "Education",
     description: (
       <>
-        Gurudev Public School (12th:{" "}
-        <span className="font-semibold">93.6%</span>, 10th:{" "}
-        <span className="font-semibold">95.6%</span>)<br />
+        {" "}
+        <span>•</span>{" "}
         <span className="text-pink-400 font-semibold">
           IES College of Technology
         </span>{" "}
         – B.Tech, CGPA <span className="font-semibold">8.3</span>
+        <br />
+        <span>•</span>{" "}
+        <span className="text-pink-400 font-semibold">
+          Gurudev Public School
+        </span>{" "}
+       - (12th: <span className="font-semibold">93.6%</span>, 10th:{" "}
+        <span className="font-semibold">95.6%</span>)
       </>
     ),
   },
@@ -30,7 +36,8 @@ const items = [
   {
     icon: <TrendingUp className="w-6 h-6 text-pink-400" />,
     title: "Interests",
-    description: "In my free time, you'll find me diving into system design, exploring how apps scale, or getting lost in the wonders of space and quantum physics.",
+    description:
+      "In my free time, you'll find me diving into system design, exploring how apps scale, or getting lost in the wonders of space and quantum physics.",
   },
   {
     icon: <Heart className="w-6 h-6 text-pink-400" />,
@@ -69,6 +76,6 @@ const AboutContent = () => {
       </div>
     </motion.section>
   );
-}
+};
 
-export default AboutContent
+export default AboutContent;
