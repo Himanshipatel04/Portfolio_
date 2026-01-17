@@ -1,15 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Link, NavLink } from "react-router-dom";
-
-const navItems = [
-  { path: "/", label: "Home" },
-  { path: "/projects", label: "Projects" },
-  { path: "/about", label: "About" },
-  { path: "/experience", label: "Experience" },
-  { path: "/npmZone", label: "NpmZone" },
-  { path: "/hackathons", label: "Hackathon" },
-  { path: "/certificates", label: "Certificates" },
-];
+import {navItems} from "../constants/navItems";
 
 const MobileDrawer = ({ isOpen, toggle }) => {
   return (
