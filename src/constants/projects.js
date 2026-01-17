@@ -3,8 +3,7 @@ export const projectList = [
     title: "Indic Roots",
     description:
       "A comprehensive platform dedicated to preserving and promoting Indian heritage through virtual tours, educational content, and cultural events.",
-    image:
-      "https://ik.imagekit.io/7ou6v9w7m/assets/indic-roots.png",
+    image: "https://ik.imagekit.io/7ou6v9w7m/assets/indic-roots.png",
     tech: [
       "Next.js",
       "Node.js",
@@ -35,7 +34,7 @@ export const projectList = [
       "Zustand",
     ],
     github: "https://github.com/Himanshipatel04/Learnify_b",
-    demo: "https://learnifyprojectapp.netlify.app",
+    demo: "https://learnify-projects.vercel.app/",
   },
   {
     title: "Kisaan AI",

@@ -4,7 +4,7 @@ import {navItems} from '../constants/navItems'
 
 const DesktopNav = () => {
   return (
-    <ul className="hidden md:flex gap-6 text-sm font-medium">
+    <ul className="hidden md:flex gap-6 text-md font-medium">
       {navItems.map(({ path, label }) => (
         <li key={path}>
           <NavLink

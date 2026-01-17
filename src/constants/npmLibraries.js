@@ -30,5 +30,8 @@ export const npm = [
   { "key": "React-slick", "value": "Carousel slider component for React." },
   { "key": "GSAP", "value": "High-performance JavaScript animation library." },
   { "key": "Crypto", "value": "Node.js module for cryptographic operations." },
-  { "key": "Redux", "value": "Predictable state management for JavaScript applications." }
+  { "key": "Redux", "value": "Predictable state management for JavaScript applications." },
+  { "key": "Redux Thunk", "value": "Middleware for handling async actions in Redux." },
+  { "key": "Axios", "value": "Promise-based HTTP client for the browser and Node.js." },
+  { "key": "Drizzle", "value": "Modern TypeScript ORM for PostgreSQL." },
 ]

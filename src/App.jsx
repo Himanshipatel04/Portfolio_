@@ -6,6 +6,7 @@ import Hero from "./pages/Hero";
 const About = lazy(() => import("./pages/About"));
 import Projects from "./pages/Projects";
 import Loading from "./pages/Loading";
+import Skills from "./pages/Skills";
 const NpmZone = lazy(() => import("./pages/NpmZone"));
 const Experience = lazy(() => import("./pages/Experience"));
 const Layout = lazy(() => import("./Layout"));
@@ -21,7 +22,7 @@ const App = () => {
           <Route element={<Layout />}>
             <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />
-            <Route path="/skills" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/npmZone" element={<NpmZone />} />
             <Route path="/hackathons" element={<Hackathons />} />
