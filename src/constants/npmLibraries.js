@@ -34,4 +34,7 @@ export const npm = [
   { "key": "Redux Thunk", "value": "Middleware for handling async actions in Redux." },
   { "key": "Axios", "value": "Promise-based HTTP client for the browser and Node.js." },
   { "key": "Drizzle", "value": "Modern TypeScript ORM for PostgreSQL." },
+  { "key": "Postgres", "value": "PostgreSQL client for Node.js." },
+  { "key": "uuid", "value": "Generate unique identifiers." },
+  { "key": "Zod", "value": "Utility library for JavaScript." }
 ]
